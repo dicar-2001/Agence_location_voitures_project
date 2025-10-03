@@ -1,72 +1,39 @@
-🚗 Gestion d’Agence de Location de Véhicules
-📌 Description
+# 🚗 Gestion d’Agence de Location de Véhicules
 
-Ce projet est une application Python qui simule le fonctionnement d’une agence de location de véhicules.
-Il permet de gérer un parc automobile, d’enregistrer des clients, de traiter les locations actives et de générer des contrats de location une fois les véhicules retournés.
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)  
+![Pandas](https://img.shields.io/badge/Library-pandas-yellow?logo=pandas)  
+![Matplotlib](https://img.shields.io/badge/Library-matplotlib-orange?logo=plotly)  
 
-Le système inclut également la sauvegarde des données (JSON) et la génération de rapports d’activité (revenus mensuels et utilisation de la flotte).
+---
 
-🎯 Objectif du projet
+## 📌 Description
+Ce projet est une application Python qui simule le fonctionnement d’une **agence de location de véhicules**.  
+Elle permet de gérer un **parc automobile**, d’enregistrer des **clients**, de traiter les **locations** et de générer des **contrats**.  
+Les données sont sauvegardées en **JSON**, et les revenus peuvent être analysés avec **pandas** et visualisés avec **matplotlib**.
 
-Automatiser la gestion d’une agence de location.
+---
 
-Permettre une meilleure organisation du parc automobile.
+## 🎯 Objectif du projet
+- Automatiser la gestion d’une agence de location.  
+- Améliorer l’organisation et le suivi du parc automobile.  
+- Calculer automatiquement les coûts des locations.  
+- Générer des statistiques et rapports sur les revenus.  
 
-Suivre les contrats de location et calculer les coûts en temps réel.
+---
 
-Générer des statistiques et rapports pour l’analyse de performance.
+## ⚙️ Fonctionnalités principales
+- ✅ Gestion des véhicules : ajout, affichage, maintenance.  
+- ✅ Gestion des clients : enregistrement, recherche.  
+- ✅ Gestion des locations : louer, retourner, créer un contrat.  
+- ✅ Historique : sauvegarde complète des contrats passés.  
+- ✅ Persistance : stockage et chargement JSON.  
+- ✅ Rapports : analyse des revenus & visualisation graphique.  
 
-⚙️ Fonctionnalités principales
+---
 
-✅ Gestion des véhicules : ajout, affichage, mise en maintenance, disponibilité.
+## 🏗️ Architecture du projet
 
-✅ Gestion des clients : enregistrement, recherche et affichage.
+### 📌 Diagramme UML
+![Diagramme UML](./uml_diagram.png)
 
-✅ Gestion des locations : louer un véhicule, retourner un véhicule, créer un contrat.
-
-✅ Historique des contrats : enregistrement des locations passées.
-
-✅ Sauvegarde et chargement : persistance des données en JSON.
-
-✅ Rapports et analyses : statistiques et graphiques avec pandas et matplotlib.
-
-🏗️ Architecture du projet
-
-Le projet est basé sur la Programmation Orientée Objet (POO).
-
-📌 Diagramme UML
-
-
-(Le diagramme ci-dessus illustre les classes principales et leurs relations)
-
-📌 Classes principales
-
-Vehicule (classe parent)
-
-VoitureTourisme
-
-Utilitaire
-
-Client
-
-LocationActive
-
-ContratLocation
-
-Agence (gestionnaire principal)
-
-AgencePersistante (ajout persistance JSON)
-
-🛠️ Technologies utilisées
-
-Python 3.12+ → langage principal.
-
-JSON → persistance des données.
-
-Pandas → analyse et statistiques.
-
-Matplotlib → visualisation des revenus.
-
-Datetime → gestion des dates et durées.
-
-POO (Programmation Orientée Objet) → structuration du projet.
+### 📂 Organisation du code
